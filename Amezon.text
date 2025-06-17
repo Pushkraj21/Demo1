@@ -1,0 +1,38 @@
+package MapDemo;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Amezon {
+    public static void main(String[] args) {
+        HashMap h1=new HashMap();
+
+        h1.put(101,"Books");
+        h1.put(102,"Shoes");
+        h1.put(103,"Bottel");
+        h1.put(104,"shirt");
+        h1.put(105,"Pen");
+
+        System.out.println("Get order history "+h1);
+
+        System.out.println("Get order id "+h1.keySet());
+        System.out.println("Get products in cart "+h1.values());
+
+        Iterator i=h1.entrySet().iterator();
+        while (i.hasNext()){
+            Map.Entry m=(Map.Entry) i.next();
+
+            if (m.getValue().equals("Pen")){
+                i.remove();
+            }
+
+        }
+        System.out.println(h1);
+    }
+}
+op:
+Get order history {101=Books, 102=Shoes, 103=Bottel, 104=shirt, 105=Pen}
+Get order id [101, 102, 103, 104, 105]
+Get products in cart [Books, Shoes, Bottel, shirt, Pen]
+{101=Books, 102=Shoes, 103=Bottel, 104=shirt}
