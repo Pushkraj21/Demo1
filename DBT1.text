@@ -1,0 +1,25 @@
+q1: select empid,ename,sal from flaynaut.emp;
+
+q2: select ename,sal,job from flaynaut.emp where job='SALESMAN';
+
+q3: select ename,job,sal from flaynaut.emp where deptno=30;
+
+q4: select ename,job from flaynaut.emp where job='manager' or job='CLERK';
+
+q6: select ename,comm from flaynaut.emp where comm is not null;
+
+q7: select ename ,job from flaynaut.emp where job='manager';
+
+q8: select ename ,sal from flaynaut.emp where sal>1500;
+
+q9: select ename,hiredate from flaynaut.emp where hiredate between '1981-4-1' and '1981-5-1';
+
+q10: select ename from flaynaut.emp where ename like 's%';
+
+q11; select ename,sal from flaynaut.emp where sal<>5000;
+
+q12: select ename,hiredate from flaynaut.emp where hiredate>='1981-12-1';
+
+q13: select ename,sal from flaynaut.emp where sal between 1000 and 3000;
+
+q14: select ename,job,sal from flaynaut.emp where job='salesman' and sal>1200;
