@@ -1,5 +1,5 @@
 q1: select empid,ename,sal from flaynaut.emp;
-
++++++++
 q2: select ename,sal,job from flaynaut.emp where job='SALESMAN';
 
 q3: select ename,job,sal from flaynaut.emp where deptno=30;
